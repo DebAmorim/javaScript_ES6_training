@@ -1,32 +1,16 @@
-class List{
-    constructor(){
-        this.data = [];
-    }
-
-    add(data){
-        this.data.push(data);
-        console.log(this.data);
-    }
-}
-
-class TodoList extends List{
+class Matematica {
     
-    constructor(){
-        //está chamando o constructor da classe pai
-        super();
 
-        this.usuario = 'Deb';
-    }
-
-    mostraUsuario(){
-        console.log(this.usuario);
+    /**
+     * O método static pode ser usado sem a nessidade de instanciar
+     * a classe.
+     * O método static serve para auxiliar em alguma operação, ele 
+     * recebe um valor e retorna alguma informação. Ele não "enxerga"
+     * o que existe no restante da classe.
+     */
+    static soma(a, b){
+        return a + b;
     }
 }
 
-const MinhaLista = new TodoList();
-
-document.getElementById('novotodo').onclick = function(){
-    MinhaLista.add('Novo todo');
-}
-
-MinhaLista.mostraUsuario();
+console.log (Matematica.soma(1,2));
