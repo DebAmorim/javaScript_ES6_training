@@ -1,16 +1,37 @@
-class Matematica {
-    
+/**
+ * variáveis constantes não tem seu valor reatribuído,
+ * ou seja, elas são "read only"
+ */
 
-    /**
-     * O método static pode ser usado sem a nessidade de instanciar
-     * a classe.
-     * O método static serve para auxiliar em alguma operação, ele 
-     * recebe um valor e retorna alguma informação. Ele não "enxerga"
-     * o que existe no restante da classe.
-     */
-    static soma(a, b){
-        return a + b;
+const a = 1;
+
+// fazer a = 3 retornaria um erro
+
+/**
+ * Mutação de variável:
+ * Trabalhamos com o mesmo formato do objeto, mesmas informações,
+ * mas o valor é diferente.
+ */
+
+const usuario = {
+    nome: 'Deb'
+};
+
+usuario.nome = 'Amorim';
+console.log(usuario.nome);
+
+/**
+ * Variáveis de escopo
+ * O escopo do let é definido pelas {} onde a variável foi declarada
+ *
+ */
+
+function teste(x){
+    let y = 2;
+
+    if(x>5){
+        console.log(x,y);
     }
 }
 
-console.log (Matematica.soma(1,2));
+teste(10);

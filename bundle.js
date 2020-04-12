@@ -1,32 +1,34 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+/**
+ * variáveis constantes não tem seu valor reatribuído,
+ * ou seja, elas são "read only"
+ */
+var a = 1; // fazer a = 3 retornaria um erro
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+/**
+ * Mutação de variável:
+ * Trabalhamos com o mesmo formato do objeto, mesmas informações,
+ * mas o valor é diferente.
+ */
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var usuario = {
+  nome: 'Deb'
+};
+usuario.nome = 'Amorim';
+console.log(usuario.nome);
+/**
+ * Variáveis de escopo
+ * O escopo do let é definido pelas {} onde a variável foi declarada
+ *
+ */
 
-var Matematica = /*#__PURE__*/function () {
-  function Matematica() {
-    _classCallCheck(this, Matematica);
+function teste(x) {
+  var y = 2;
+
+  if (x > 5) {
+    console.log(x, y);
   }
+}
 
-  _createClass(Matematica, null, [{
-    key: "soma",
-
-    /**
-     * O método static pode ser usado sem a nessidade de instanciar
-     * a classe.
-     * O método static serve para auxiliar em alguma operação, ele 
-     * recebe um valor e retorna alguma informação. Ele não "enxerga"
-     * o que existe no restante da classe.
-     */
-    value: function soma(a, b) {
-      return a + b;
-    }
-  }]);
-
-  return Matematica;
-}();
-
-console.log(Matematica.soma(1, 2));
+teste(10);
