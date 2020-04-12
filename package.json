@@ -11,7 +11,7 @@
   },
 
   "scripts": {
-    "dev": "babel ./main.js -o ./bundle.js"
+    "dev": "babel ./main.js -o ./bundle.js -w"
   }
 
 }
