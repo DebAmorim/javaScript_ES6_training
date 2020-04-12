@@ -3,7 +3,7 @@
 </h1>
 
 <h2 align="center">
-  OmniStack Week 11.0
+  JavaScript and ECMAScript 6
 </h2>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DebAmorim/javaScript_ES6">
