@@ -1,26 +1,43 @@
 "use strict";
 
 /**
- * Valores Padrão
+ * Desestruturação
  * 
- * Funções podem ter valores padrões de parâmetros declarados
- * para evitar erros caso não recebam todos os parâmetros.
+ * Recurso para obter valores de um objeto no JS
  * 
  */
-//escrito da forma tradicional
-//  function soma (a = 3, b = 6){
-//      return a + b;
-//  }
-//escrito como arrowfunction
-var soma = function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a + b;
+var usuario = {
+  nome: 'Deb',
+  idade: 28,
+  endereco: {
+    cidade: 'Uberlândia',
+    estado: 'MG'
+  }
 };
+console.log(usuario); //como normalmente se dá o acesso às informações do usuário:
+//  const nome = usuario.nome;
+//  const idade = usuario.idade;
+//  const cidade = usuario.endereco.cidade;
+//o que torna muito verboso o código.
 
-console.log('Soma sem parâmetros result: ');
-console.log(soma());
-console.log('Soma com 1 parâmetro (2) result: ');
-console.log(soma(2));
-console.log('Soma com 2 parâmetros (2, 15) result: ');
-console.log(soma(2, 15));
+/**
+* Aplicando conceitos de desestruturação:
+*/
+
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+/**
+* Aplicando desestruturação em funções:
+*/
+
+function mostraNome(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  console.log(nome, idade);
+}
+
+mostraNome(usuario);
