@@ -1,13 +1,22 @@
 "use strict";
 
 /**
- * Template Literals
+ * Object Short Syntax
  * 
- * Uma forma de incluir variáveis dentro de strings no JS ES6
- * 
+ * Uma forma de replicar dados de um objeto em outro
  */
 var nome = 'Deb';
-var idade = 28; //essa forma exige muitas concatenações
+var idade = 28; //como seria feito
+// const usuario = {
+//     nome: nome,
+//     idade: idade,
+//     empresa: 'PiButtons',
+// };
+//como pode ser feito
 
-console.log('Meu nome é ' + nome + ' e tenho' + idade + ' anos.');
-console.log("Meu nome \xE9 ".concat(nome, " e tenho ").concat(idade, " anos."));
+var usuario = {
+  nome: nome,
+  idade: idade,
+  empresa: 'PiButtons'
+};
+console.log(usuario);

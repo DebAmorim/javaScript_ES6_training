@@ -1,16 +1,25 @@
 /**
- * Template Literals
+ * Object Short Syntax
  * 
- * Uma forma de incluir variáveis dentro de strings no JS ES6
- * 
+ * Uma forma de replicar dados de um objeto em outro
  */
 
 
 const nome = 'Deb';
 const idade = 28;
 
-//essa forma exige muitas concatenações
-console.log('Meu nome é ' + nome + ' e tenho' + idade + ' anos.');
+//como seria feito
+// const usuario = {
+//     nome: nome,
+//     idade: idade,
+//     empresa: 'PiButtons',
+// };
 
-console.log(`Meu nome é ${nome} e tenho ${idade} anos.`)
+//como pode ser feito
+const usuario = {
+    nome,
+    idade,
+    empresa: 'PiButtons',
+};
 
+console.log(usuario);
