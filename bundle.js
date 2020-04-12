@@ -7,58 +7,28 @@
  */
 var arr = [1, 3, 4, 5, 8, 9];
 /**
- * Map:
- * 
- * Percorre um vetor
- * Retorna uma informação
- * 
- * Pode receber, além do item do vetor a ser percorrido,
- * o index (que é a posição do item no vetor)
+ *
+ * Sem uso de arrow function e tem-se dentro do map uma função
+ * anônima
  */
 
 var newArr = arr.map(function (item, index) {
-  return item + index;
+  return item * 2;
 });
 console.log('Map result: ');
 console.log(newArr);
 /**
- * Reduce:
+ * Arrow Function:
  * 
- * Percorre um vetor
- * Retorna uma informação única (uma variável)
- */
-//neste exemplo todos os itens do vetor serão somados
-
-var sum = arr.reduce(function (total, next) {
-  return total + next;
-});
-console.log('Reduce result: ');
-console.log(sum);
-/**
- * Filter:
+ * Requisito: funções anônimas, ex: callback
  * 
- * Percorre um vetor
- * Faz uma comparação para o item
- * Se retornar true, o item é adicionado ao novo vetor
+ * Recebendo um único parâmetro
+ * Retornando um único parâmetro
+ * 
  */
 
-var filter = arr.filter(function (item) {
-  //comparação que retorna true ou false 
-  return item % 2 === 0;
+var arrow = arr.map(function (item) {
+  return item * 2;
 });
-console.log('Filter result: ');
-console.log(filter);
-/**
- * Find:
- * 
- * Percorre um vetor em busca de informação específica
- * Se encontrar, retorna a própria informação buscada
- * Se não encontrar, retorna undefined
- */
-
-var find = arr.filter(function (item) {
-  //comparação que retorna true ou false 
-  return item === 4;
-});
-console.log('Find result: ');
-console.log(find);
+console.log('Arrow function result: ');
+console.log(arrow);
