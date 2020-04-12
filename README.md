@@ -6,7 +6,7 @@
   JavaScript and ECMAScript 6
 </h2>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DebAmorim/javaScript_ES6">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DebAmorim/javaScript_ES6/color=<yellow>">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/DebAmorim/javaScript_ES6">
   
