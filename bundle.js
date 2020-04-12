@@ -1,34 +1,26 @@
 "use strict";
 
 /**
- * Manipulando Arrays
- * ES6 trás funcionalidades para simplificar a manipulação
- * de arrays.
+ * Valores Padrão
+ * 
+ * Funções podem ter valores padrões de parâmetros declarados
+ * para evitar erros caso não recebam todos os parâmetros.
+ * 
  */
-var arr = [1, 3, 4, 5, 8, 9];
-/**
- *
- * Sem uso de arrow function e tem-se dentro do map uma função
- * anônima
- */
+//escrito da forma tradicional
+//  function soma (a = 3, b = 6){
+//      return a + b;
+//  }
+//escrito como arrowfunction
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
+};
 
-var newArr = arr.map(function (item, index) {
-  return item * 2;
-});
-console.log('Map result: ');
-console.log(newArr);
-/**
- * Arrow Function:
- * 
- * Requisito: funções anônimas, ex: callback
- * 
- * Recebendo um único parâmetro
- * Retornando um único parâmetro
- * 
- */
-
-var arrow = arr.map(function (item) {
-  return item * 2;
-});
-console.log('Arrow function result: ');
-console.log(arrow);
+console.log('Soma sem parâmetros result: ');
+console.log(soma());
+console.log('Soma com 1 parâmetro (2) result: ');
+console.log(soma(2));
+console.log('Soma com 2 parâmetros (2, 15) result: ');
+console.log(soma(2, 15));
