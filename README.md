@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="JS ES6" title="#ecmaScript6" src="imagens/logo.svg" width="250px" />
+    <img alt="JS ES6" title="#ecmaScript6" src="imagens/logo.jpeg" width="250px" />
 </h1>
 
 <h2 align="center">
