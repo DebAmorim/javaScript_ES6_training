@@ -22,57 +22,18 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
-<!-- <p align="center">
-    <a href="https://insomnia.rest/run/?label=Be%20The%20Hero%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fvsalbuq%2Fbe-the-hero%2Fmaster%2FInsomnia_2020-03-25.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p> -->
-
 <p align="center">
   <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#built-with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#contributing">Contributing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  
   <a href="#license">License</a>
 </p>
 
 <br>
 
-<!-- <p align="center">
-  <img alt="Frontend" src=".github/be-the-hero-desktop.gif" width="50%">
-</p> -->
-
-
 ## About
 
-A project developed to study ES6.
+Just some exercises to study ES6.
 
-## Getting started
-
-After dowloading or branching you should install the following prerequisites:
-
-* To be added ...
-* ...
-
-### Installing
-
-To be added ...
-
-## Testing
-
-To be added ...
-
-## Built with
-
-To be added ...
-
-## Contributing
-
-* Fork this repository;
-* Create a branch with your feature: `git checkout -b my-feature`;
-* Commit your changes: `git commit -m 'feat: My new feature: <description>'`;
-* Push it to your branch: `git push origin my-feature`.
-
-After merging your pull request, your branch can be deleted;
 
 ## License
 
