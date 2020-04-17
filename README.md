@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="JS ES6" title="#GitHub Repo Finder" src="imagens/logo.jpeg" width="250px" />
+    <img alt="JS ES6" title="#ecmaScript6" src="imagens/logo.jpeg" width="250px" />
 </h1>
 
 <h2 align="center">
@@ -23,7 +23,7 @@
 </p>
 
 
-<!-- <p align="center">
+<p align="center">
   <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
@@ -33,7 +33,9 @@
 
 ## About
 
+Just some exercises to study ES6.
 
 
 ## License
- -->
+
+This project uses the MIT license. Read [LICENSE](LICENSE.txt) for details.
